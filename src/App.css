@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+  max-width: 75%;
+  margin: 8px auto;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  color: #404040;
+  background-color: #eee;
+}
+
+ .CommentSection__container h1 {
+  text-align: center;
+  font-size: 32px;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #337ab7;
+  border-color: #2e6da4;
+}
+
+#align-form {
+  margin-top: 20px
+}
+
+.form-group p a {
+  color: white
+}
+
+.form-group input,
+.form-group textarea {
+    background-color: white;
+    border: 1px solid rgba(16, 46, 46, 1);
+    border-radius: 12px
+}
+
+.link{
+  text-decoration: none;
+  color: #337ab7;
+}
+
+i{
+  color: #337ab7;
+  margin-right: 2px;
+}
