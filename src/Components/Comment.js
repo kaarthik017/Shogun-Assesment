@@ -14,6 +14,7 @@ class Comment extends React.Component {
       showToast: false,
     };
 
+ 
     this.like = this.like.bind(this);
     this.report = this.report.bind(this);
     this.createComment = this.createComment.bind(this);
@@ -52,6 +53,7 @@ class Comment extends React.Component {
     e.preventDefault();
     alert("Thank you for your report, our team will investigate this comment.");
   }
+
 
   render() {
     return (
@@ -94,7 +96,8 @@ class Comment extends React.Component {
                       <a
                         className="link"
                         href="#"
-                        onClick={() => {
+                        onClick={(e) => {
+                          e.preventDefault();
                           this.setState({ openReply: true });
                         }}
                       >
@@ -131,6 +134,7 @@ class Comment extends React.Component {
                       onChange={(event) => {
                         this.setState({ commentContent: event.target.value });
                       }}
+                      autoFocus
                     ></textarea>
                     </div>
                   </div>
@@ -139,7 +143,7 @@ class Comment extends React.Component {
                     className={`btn btn-success btn-sm shadow-none  ${(this.state.commentContent).trim().length === 0 ? "disabled" : ""}`}
                     
                       type="button"
-                      onClick={() => this.createComment()}
+                      onClick={() => {this.createComment();}}
                     >
                       Post comment
                     </button>

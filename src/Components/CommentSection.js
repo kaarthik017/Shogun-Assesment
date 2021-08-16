@@ -109,7 +109,7 @@ class CommentSection extends React.Component {
               <div className="form-group mt-4 text-center">
             
                 <button
-                  type="submit"
+                  type="button"
                   id="post"
                   className='btn btn-primary'
                   onClick={() => this.postComments()}
