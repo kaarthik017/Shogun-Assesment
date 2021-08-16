@@ -123,7 +123,7 @@ class Comment extends React.Component {
                     <img
                       className="rounded-circle"
                       src="https://www.pngfind.com/pngs/m/470-4703547_icon-user-icon-hd-png-download.png"
-                      width="120"
+                      width="80"
                     />
                     </div>
                     <div className='col-md-9'>
